@@ -41,6 +41,24 @@
         liListTwo.innerHTML="buy groceries"
         uListTwo.append(liListTwo);
 
+        trParent[2].append(uListTwo);
+
+        //row table
+        var tble = document.getElementById('chores');
+        var trParent = document.getElementById('tasks')
+        tble.appendChild(trParent);
+
+        var tdChild = document.createElement('td');
+        trParent.appendChild(tdChild);
+        document.getElementById('chores').insertBefore(tdChild, tasks);
+
+        var tdChildTwo = document.createElement('td');
+        trParent.appendChild(tdChildTwo);
+        document.getElementById('chores').insertBefore(tdChildTwo, tasks);
+  
+
+
+
 		</script>
 	</body>
 </html>
